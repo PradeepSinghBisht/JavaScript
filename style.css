@@ -1,0 +1,10 @@
+#input input{
+    height: 50px;
+    width: 300px;
+    font-size: 30px;
+}
+#button input{
+    height: 40px;
+    width: 74px;
+    font-size: 30px;
+}
