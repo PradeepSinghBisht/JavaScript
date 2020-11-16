@@ -1,3 +1,24 @@
-.abc{
+.update{
     display: none;
+    color: white;
+    border: 2px solid rgb(106, 221, 106);
+    background-color: rgb(105, 228, 105);
+}
+
+.delete{
+    background-color: red;
+    border: 2px solid red;
+    color:white;
+}
+
+#add{
+    color: white;
+    border: 2px solid green;
+    background-color: green;
+}
+
+.edit{
+    color: white;
+    border: 2px solid  rgb(115, 194, 221);
+    background-color: rgb(115, 194, 221);
 }

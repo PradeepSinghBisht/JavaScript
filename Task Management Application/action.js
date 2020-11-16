@@ -10,11 +10,11 @@ function addToDoTask(){
 function toDoDisplay() {
     var html = '';
     for (var i = 0; i < todotask.length; i++) {
-        html += '<li> <input type="checkbox" onclick="addTaskCompleted(\''+i+'\')" id="completed'+i+'">'+todotask[i]+
-                '<input type="text" id="edittodo'+i+'" readonly>'+
-                '<button type="submit" onclick="editToDoTask(\''+i+'\')" id="edit'+i+'">Edit</button>'+
-                '<button type="submit" onclick="updateToDoTask(\''+i+'\')" id="update'+i+'" class="abc">Update</button>'+
-                '<button type="submit" onclick="deleteToDoTask(\''+i+'\')" id="delete">Delete</button> </li>';
+        html += '<li> <input type="checkbox" onclick="addTaskCompleted('+i+')" id="completed'+i+'" > '+todotask[i]+
+                ' <input type="text" id="edittodo'+i+'" readonly> '+
+                '<button type="submit" onclick="editToDoTask('+i+')" id="edit'+i+'" class="edit">EDIT</button> '+
+                '<button type="submit" onclick="updateToDoTask('+i+')" id="update'+i+'" class="update">UPDATE</button> '+
+                '<button type="submit" onclick="deleteToDoTask('+i+')" class="delete">DELETE</button> </li>';
     }
     document.getElementById('todo').innerHTML = html;
     document.getElementById('task').value = "";
@@ -56,11 +56,11 @@ function addToDo(i) {
 function taskCompletedDisplay() {
     var html = '';
     for (var i = 0; i < taskcompleted.length; i++) {
-        html += '<li> <input type="checkbox" onclick="addToDo(\''+i+'\')" id="completed'+i+'" checked>'+taskcompleted[i]+
-                '<input type="text" id="editcompleted'+i+'" readonly>'+
-                '<button type="submit" onclick="editTaskCompleted(\''+i+'\')" id="edittask'+i+'">Edit</button>'+
-                '<button type="submit" onclick="updateTaskCompleted(\''+i+'\')" id="updatetask'+i+'" class="abc">Update</button>'+
-                '<button type="submit" onclick="deleteTaskCompleted(\''+i+'\')" id="delete">Delete</button> </li>';
+        html += '<li> <input type="checkbox" onclick="addToDo('+i+')" id="completed'+i+'" checked> '+taskcompleted[i]+
+                ' <input type="text" id="editcompleted'+i+'" readonly> '+
+                '<button type="submit" onclick="editTaskCompleted('+i+')" id="edittask'+i+'" class="edit">EDIT</button> '+
+                '<button type="submit" onclick="updateTaskCompleted('+i+')" id="updatetask'+i+'" class="update">UPDATE</button> '+
+                '<button type="submit" onclick="deleteTaskCompleted('+i+')" class="delete">DELETE</button> </li>';
     }
     document.getElementById('completed').innerHTML = html;
     document.getElementById('task').value = "";
